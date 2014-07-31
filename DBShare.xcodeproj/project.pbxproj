@@ -13,6 +13,7 @@
 		9A944166198A8A91001B6189 /* DBShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A944164198A8A91001B6189 /* DBShare.m */; };
 		9A944168198A8AAA001B6189 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A944167198A8AAA001B6189 /* MessageUI.framework */; };
 		9A94416A198A8AAF001B6189 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A944169198A8AAF001B6189 /* MobileCoreServices.framework */; };
+		9A94416C198A91D3001B6189 /* DBShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94416B198A91D3001B6189 /* DBShare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		9A944164198A8A91001B6189 /* DBShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBShare.m; sourceTree = "<group>"; };
 		9A944167198A8AAA001B6189 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9A944169198A8AAF001B6189 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9A94416B198A91D3001B6189 /* DBShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DBShare.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +36,7 @@
 			files = (
 				9A94416A198A8AAF001B6189 /* MobileCoreServices.framework in Frameworks */,
 				9A944168198A8AAA001B6189 /* MessageUI.framework in Frameworks */,
+				9A94416C198A91D3001B6189 /* DBShare.framework in Frameworks */,
 				9A944156198A8A62001B6189 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,6 +47,7 @@
 		9A944145198A8A62001B6189 = {
 			isa = PBXGroup;
 			children = (
+				9A94416B198A91D3001B6189 /* DBShare.framework */,
 				9A944157198A8A62001B6189 /* DBShare */,
 				9A944154198A8A62001B6189 /* Frameworks */,
 				9A944153198A8A62001B6189 /* Products */,
@@ -302,6 +306,10 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBShare/DBShare-Prefix.pch";
@@ -318,6 +326,10 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBShare/DBShare-Prefix.pch";
