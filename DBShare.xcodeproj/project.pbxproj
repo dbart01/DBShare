@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9A944156198A8A62001B6189 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A944155198A8A62001B6189 /* Foundation.framework */; };
 		9A94415C198A8A62001B6189 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A94415A198A8A62001B6189 /* InfoPlist.strings */; };
+		9A944165198A8A91001B6189 /* DBShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A944163198A8A91001B6189 /* DBShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A944166198A8A91001B6189 /* DBShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A944164198A8A91001B6189 /* DBShare.m */; };
+		9A944168198A8AAA001B6189 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A944167198A8AAA001B6189 /* MessageUI.framework */; };
+		9A94416A198A8AAF001B6189 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A944169198A8AAF001B6189 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +21,10 @@
 		9A944159198A8A62001B6189 /* DBShare-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DBShare-Info.plist"; sourceTree = "<group>"; };
 		9A94415B198A8A62001B6189 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A94415D198A8A62001B6189 /* DBShare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBShare-Prefix.pch"; sourceTree = "<group>"; };
+		9A944163198A8A91001B6189 /* DBShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBShare.h; sourceTree = "<group>"; };
+		9A944164198A8A91001B6189 /* DBShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBShare.m; sourceTree = "<group>"; };
+		9A944167198A8AAA001B6189 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9A944169198A8AAF001B6189 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A94416A198A8AAF001B6189 /* MobileCoreServices.framework in Frameworks */,
+				9A944168198A8AAA001B6189 /* MessageUI.framework in Frameworks */,
 				9A944156198A8A62001B6189 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +61,8 @@
 		9A944154198A8A62001B6189 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A944169198A8AAF001B6189 /* MobileCoreServices.framework */,
+				9A944167198A8AAA001B6189 /* MessageUI.framework */,
 				9A944155198A8A62001B6189 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -59,6 +71,8 @@
 		9A944157198A8A62001B6189 /* DBShare */ = {
 			isa = PBXGroup;
 			children = (
+				9A944163198A8A91001B6189 /* DBShare.h */,
+				9A944164198A8A91001B6189 /* DBShare.m */,
 				9A944158198A8A62001B6189 /* Supporting Files */,
 			);
 			path = DBShare;
@@ -81,6 +95,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A944165198A8A91001B6189 /* DBShare.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A944166198A8A91001B6189 /* DBShare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +299,7 @@
 		9A944161198A8A62001B6189 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -302,10 +315,7 @@
 		9A944162198A8A62001B6189 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -337,6 +347,7 @@
 				9A944162198A8A62001B6189 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
