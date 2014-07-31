@@ -38,7 +38,10 @@ DBShareMessage *messageShare = [DBShareMessage shareFromController:self];
 Both <code>DBShareMail</code> and <code>DBShareMessage</code> inherit from the <code>DBShareable</code> object, which supports adding attachments. For both mail and message sharing, adding an attachment is as simple as:
 ```objc
 - (void)sendImage:(UIImage *)image {
-    DBShareAttachment *attachment = [DBShareAttachment attachmentWithJPEGImage:image quality:0.85f fileName:@"image.jpeg"];
+    DBShareAttachment *attachment = [DBShareAttachment attachmentWithJPEGImage:image 
+                                                                       quality:0.85f 
+                                                                      fileName:@"image.jpeg"];
+                                                                      
     DBShareMessage *messageShare  = [DBShareMessage shareFromController:self];
     [messageShare addAttachment:attachment];
     [messageShare present];
@@ -48,8 +51,11 @@ Both <code>DBShareMail</code> and <code>DBShareMessage</code> inherit from the <
 Also, no need to keep all the different MIME types in your head. With <code>DBMimeType</code> enumeration, Xcode is able to provide code completion, eliminate spelling errors and allow you to quickly find the correct MIME type.
 ```objc
 - (void)sendData:(NSData *)data {
-    DBShareAttachment *attachment = [DBShareAttachment attachmentWithData:data mime:DBMimeTypeAppPDF fileName:@"report.pdf"]; // MIME string: application/pdf
-    DBShareMail *mailShare        = [DBShareMail shareFromController:self];
+    DBShareAttachment *attachment = [DBShareAttachment attachmentWithData:data 
+                                                                     mime:DBMimeTypeAppPDF // MIME string: application/pdf 
+                                                                 fileName:@"report.pdf"]; 
+                                                                 
+    DBShareMail *mailShare = [DBShareMail shareFromController:self];
     [mailShare addAttachment:attachment];
     [mailShare present];
 }
