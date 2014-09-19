@@ -1,7 +1,7 @@
 DBShare
 =======
 
-Do you every wish sending an email or message from within the app didn't have to go through the pain of setting up delegates and dealing with MFMailComposeViewController? Now you don't have to! DBShare is a library that makes MFMailComposeViewController and MFMessageComposeViewController problems a thing of the past.
+Do you ever wish sending an email or message from within the app didn't have to go through the pain of setting up delegates and dealing with MFMailComposeViewController? Now you don't have to! DBShare is a library that makes MFMailComposeViewController and MFMessageComposeViewController problems a thing of the past.
 
 Use the two-file source code or simply drag n' drop the static framework into your project and import the header:
 ```objc
